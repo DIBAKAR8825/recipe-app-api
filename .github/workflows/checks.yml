@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   test-lint:
-    namw: Test and Lint
+    name: Test and Lint
     runs-on: ubuntu-24.04
     steps:
       - name: Login to Docker Hub
