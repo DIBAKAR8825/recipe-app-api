@@ -15,7 +15,7 @@ services:
       - DB_HOST=db
       - DB_NAME=recipeDB
       - DB_USER=postgres
-      - DB_PASS=admin@123
+      - DB_PASS=mysecretpassword
     depends_on:
       - db 
 
@@ -27,7 +27,7 @@ services:
     environment:
       POSTGRES_DB: recipeDB
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: admin@123
+      POSTGRES_PASSWORD: mysecretpassword
 
 volumes:
   dev-db-data:
