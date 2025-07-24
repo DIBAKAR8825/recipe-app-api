@@ -33,6 +33,7 @@ def test_new_user_email_normalized(self):
         user = get_user_model().objects.create_user(email, 'sample123')
         self.assertEqual(user.email, expected)
 
+
 def test_new_user_without_email_raises_error(self):
     """Test creating user without an email raises error"""
     with self.assertRaises(ValueError):
